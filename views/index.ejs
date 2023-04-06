@@ -1,7 +1,7 @@
 <%- include('./partials/head') %>
 
     <main>
-        <h1>Welkom terug Pepijn!</h1>
+        <h1>Welkom, Jennifer</h1>
         <div class="kader">
 
             <div class="vierkant">
@@ -10,12 +10,12 @@
             </div>
             <p class="notities">Notities</p>
 
-            <img class="iconcross" src="/cross.svg" alt="iconcross">
+            <!-- <img class="iconcross" src="/cross.svg" alt="iconcross"> -->
 
             <% notities.forEach(notitie=> { %>
 
                 <article class="notitie-container">
-
+                <br>
                     <h2>Notities <span class="datum">
                             <%= notitie.datum %>
                         </span></h2>

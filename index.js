@@ -64,7 +64,7 @@ server.post('/', function (req, res, next) {
 
 
 // Stel het poortnummer in en start express
-server.set('port', process.env.PORT || 8000)
+server.set('port', process.env.PORT || 8001)
 server.listen(server.get('port'), function () {
   console.log(`Application started on http://localhost:${server.get('port')}`)
 })
