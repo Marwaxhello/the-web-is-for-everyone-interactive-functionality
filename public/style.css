@@ -77,7 +77,7 @@ h1 {
   font-size: 3em;
   text-align: center;
   margin-bottom: 2em;
-  margin-top: -2.5em;
+  margin-top: -3.5em;
 }
 
 h2 {
@@ -87,29 +87,156 @@ h2 {
   text-align: center;
 }
 
+/* -----MAIN STYLING NOTITIE----- */
+
+.groen-kader {
+  width: 30em;
+  height: 30em;
+  margin-left: 12rem;
+  border: 6px solid var(--Aqua-green);
+  overflow-y: scroll;
+}
+
 .vierkant {
-  height: 42px;
-  width: 325px;
-  background-color: var(--Blauw);
+  height: 50px;
+  width: 470px;
+  background-color: var(--Aqua-green);
 }
 
 .notities {
-  margin-top: -1.5em;
-  margin-left: 1em;
-  font-size: 23px;
+  margin-top: -1.9em;
+  margin-left: 2.5em;
+  font-size: 24px;
   color: white;
 }
 
-/* .iconcross {
-    margin-left: 18em;
-    margin-top: -1.5em;
-    position: absolute;
-} */
+.iconcross {
+  margin-left: 1.7em;
+  margin-top: -1.6em;
+  position: absolute;
+}
 
 .notitie-container {
   margin: 1em;
-  background: var(--Lichtblauw);
+  background: var(--Lightblue);
+  padding: 2em;
+}
+
+.colorbackground {
+  opacity: 0.5;
+  background-color: var(--Blauw);
+  width: 32%;
+  height: 32%;
+  z-index: -1;
+}
+
+.tekstproducten {
+  justify-content: center;
+  display: flex;
+}
+
+/* -----FORMULIER----- */
+
+.container {
+  margin-bottom: 1rem;
+}
+
+body.js-enabled form {
   padding: 1em;
+  margin-left: 15rem;
+  width: 16em;
+  text-align: center;
+  visibility: hidden;
+}
+
+body.js-enabled .form-visibility {
+  visibility: visible;
+}
+
+fieldset {
+  background: var(--yellow);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50em;
+  margin-right: 70em;
+  margin-top: -24.1em;
+}
+
+.kruis {
+  display: none;
+}
+
+body.js-enabled .kruis {
+  display: block;
+}
+
+input {
+  width: 13em;
+  margin: 1em;
+}
+
+.title {
+  margin-top: 1rem;
+}
+
+.herinnering {
+  margin-top: 1rem;
+}
+
+.opslaan-form {
+  background-color: var(--Aqua-green);
+  width: 7.5em;
+  padding: 1em;
+  border-radius: 7em;
+  border: none;
+  margin-left: 3.5em;
+  margin-top: 0.5em;
+}
+
+/* -----IMAGE----- */
+
+.productenimg {
+    width: 34%;
+    margin-left: 70em;
+    top: 25rem;
+    position: absolute;
+}
+
+
+/* -----MEDIA QUERY----- */
+
+@media screen and (max-width: 50em) {
+  /* -----BANNER----- */
+
+  .aankoop_banner {
+    background-color: var(--yellow);
+    margin: -5em;
+    position: relative;
+  }
+
+  .verzending_banner {
+    margin-left: 5rem;
+    margin-right: 1em;
+    line-height: 1.5em;
+    margin-top: 5em;
+    font-size: 15px;
+  }
+
+  /* MENU */
+
+  ul,
+  .icon {
+    display: none;
+  }
+
+  .viniminilogo {
+    width: 100px;
+    margin-top: 6em;
+    margin-left: 1em;
+    position: absolute;
+  }
 }
 
 /* -----FOOTER STYLING----- */
