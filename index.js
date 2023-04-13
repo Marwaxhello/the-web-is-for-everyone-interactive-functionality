@@ -20,8 +20,8 @@ server.use(express.urlencoded({ extended: true }))
 
 server.get('/', (request, response) => {
   const baseUrl = "https://api.vinimini.fdnd.nl/api/v1/"
-  const pepijnId = "notities?id=clemozv3c3eod0bunahh71sx7"
-  const url = `${baseUrl}${pepijnId}`
+  const jenniferId = "notities?id=clemozv3c3eod0bunahh71sx7"
+  const url = `${baseUrl}${jenniferId}`
 
   fetchJson(url).then((data) => {
     response.render('index', data)
